@@ -4,20 +4,23 @@ title: About
 permalink: /about/
 ---
 
-# My Research
+# Research + Skills
 -------------
+I am currently a full-time researcher and administrator in the **Stanford Social Neuroscience Lab**.
+<br><br>
 My research interests span social psychology, political science, and cognitive neuroscience. Broadly, I'm interested in exploring the neural correlates of political partisansip, as well as designing interventions to reduce polarization.
 <br> <br>
-I employ a variety of computation methods to explore these subjects, ranging from linear and logistic modeling to more nuanced, Machine Learning approaches (e.g., regularization, clustering, and decomposition). The bulk of my analyses are conducted in Python and R, and I have used MySQL and MariaDB for various projects as well.
+I employ a variety of computational methods to explore these subjects, ranging from conventional linear and logistic regression to more nuanced, Machine Learning approaches (e.g., regularization, clustering, and decomposition).
 <br> <br>
 <img src="/images/05.jpg">
 
-# Outside of Academia
+# etc.
 ---------------------
-In addition to my academic research, I play drums in the Richmond, VA based rock band [The Concussion Theory](https://theconcussiontheory.bandcamp.com/) and enjoy analog photography.
+In addition to my academic research, I play drums in the Richmond, VA based rock band The Concussion Theory and enjoy analog street photography.
 <br> <br>
-<img src="/images/04.jpg" height=450px>
+* <a href="http://www.theconcussiontheory.bandcamp.com" target=_blank>The Concussion Theory</a>
+* <a href="http://www.instagram.com/human_cactus/" target=_blank>My Photography</a>
 <br><br>
-See some of my work [here](https://www.instagram.com/human_cactus/)!
+<img src="/images/04.jpg" height=450px>
 <br><br>
 <img src="/images/07.jpg" width=685px>
