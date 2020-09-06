@@ -14,6 +14,7 @@ I employ a variety of computational methods to explore these subjects, ranging f
 <br> <br>
 <img src="/images/05.jpg">
 
+<br>
 # Outside of Academia
 ---------------------
 In addition to my academic research, I play drums in the Richmond, VA based rock band The Concussion Theory and enjoy analog street photography.
