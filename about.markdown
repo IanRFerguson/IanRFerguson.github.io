@@ -4,15 +4,20 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# My Research
+-------------
+My research interests span social psychology, political science, and cognitive neuroscience. Broadly, I'm interested in exploring the neural correlates of political partisansip, as well as designing interventions to reduce polarization.
+<br> <br>
+I employ a variety of computation methods to explore these subjects, ranging from linear and logistic modeling to more nuanced, Machine Learning approaches (e.g., regularization, clustering, and decomposition). The bulk of my analyses are conducted in Python and R, and I have used MySQL and MariaDB for various projects as well.
+<br> <br>
+<img src="/images/05.jpg">
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+# Outside of Academia
+---------------------
+In addition to my academic research, I play drums in the Richmond, VA based rock band [The Concussion Theory](https://theconcussiontheory.bandcamp.com/) and enjoy analog photography.
+<br> <br>
+<img src="/images/04.jpg" height=450px>
+<br><br>
+See some of my work [here](https://www.instagram.com/human_cactus/)!
+<br><br>
+<img src="/images/07.jpg" width=685px>
