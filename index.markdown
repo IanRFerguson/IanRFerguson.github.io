@@ -12,7 +12,7 @@ layout: home
     </div>
     <div style="text-align: right;">
       <br><br><br><br>
-      <h1>Hello!</h1>
+      <h1><b>Hello!</b></h1>
       <h2>I'm a social researcher based in San Francisco.</h2>
     </div>
   </div>
