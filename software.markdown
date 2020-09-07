@@ -3,7 +3,8 @@ layout: page
 title: Software
 permalink: /software/
 ---
-<br>
+**{ NOTE: Under Construction }**
+
 # Pairwise Stimuli Generator
 -----------
 *Loops through individual stimuli, pairs them up, and outputs to a separate folder on your local directory hierarchy*
