@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Etc
+title: etc
 permalink: /etc/
 ---
 In addition to my academic research, I play drums in the Richmond, VA based rock band The Concussion Theory and enjoy analog street photography.
