@@ -24,10 +24,9 @@ Among my principal interests is assessing the degree to which political polariza
 <img src="/images/08.png" width=1000px>
 
 <br>
-By leveraging social psychological paradigms and contemporary algorithmic approaches (e.g., Natural Language Processing and PCA), my aim is to shine a light on the antecedents of polarization in order to structure policy syntax in a minimally polarizing way.
+By leveraging social psychological theoretical frameworks and contemporary algorithmic approaches (e.g., Natural Language Processing and PCA) together, my aim is to shine a light on the antecedents of polarization in order to structure policy syntax in a minimally polarizing way.
 
 <br>
-
 <img src="/images/09.png" width=1000px>
 
 "What the Hell Happened" data obtained via <a href="https://wthh.dataforprogress.org/" target=_blank><b>Data For Progress</b></a> + <a href="https://rpubs.com/Ian_Ferguson/WTHH_001" target=_blank><b>My Analysis</b></a>
