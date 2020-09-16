@@ -13,14 +13,11 @@
 }
 
 .footer-col-wrapper {
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left:  inherit;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-col {
-  padding-left: 5px;
-  padding-right: 5px;
-  text-align: center;
+  display: inline-block;
 }
