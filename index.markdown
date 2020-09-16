@@ -13,7 +13,8 @@ layout: home
     <div style="text-align: right;">
       <br><br><br><br>
       <h1><b>Hello!</b></h1>
-      <h2>I'm a social researcher based in San Francisco.</h2>
+      <h2>I'm a social researcher<br>
+      based in San Francisco</h2>
     </div>
   </div>
 </body>
