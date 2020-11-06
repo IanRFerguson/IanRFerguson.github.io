@@ -29,6 +29,15 @@
   padding-right: 10px;
 }
 
+/*    Index     */
+.landing-page {
+  clear: both;
+}
+
+.landing-page img {
+  object-fit: scale-down;
+}
+
 
 /*     etc      */
 .etc-container {
@@ -37,6 +46,11 @@
   display: flex;
 }
 
+.etc-container img {
+  object-fit: scale-down;
+}
+
 .etc-link {
   padding: 5px;
+  object-fit: scale-down;
 }
