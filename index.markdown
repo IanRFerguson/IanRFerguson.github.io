@@ -5,7 +5,7 @@
 layout: home
 ---
 <body>
-  <div style="clear: both">
+  <div class="landing-page">
     <div style="float: left;">
       <br> <br>
       <img src="/images/00.jpg" height=375px>
