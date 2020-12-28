@@ -5,6 +5,7 @@
 layout: home
 ---
 <body>
+  <script src="assets/index.js"></script>
   <div class="landing-page">
     <div style="float: left;">
       <br> <br>
