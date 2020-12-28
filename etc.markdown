@@ -1,8 +1,11 @@
 ---
 layout: page
-title: 
+title:
 permalink: /etc/
 ---
+
+<script src="../assets/index.js"></script>
+
 I am highly passionate about supporting organizations dedicated to addressing issues of climate justice and systemic racism; if you've gotten this far on my page I suspect we may share similar ethos. Below are links to several organizations that are highly congruent with this mission.
 <br> <br>
 
