@@ -3,6 +3,9 @@ layout: page
 title: Research
 permalink: /research/
 ---
+
+<script src="../assets/index.js"></script>
+
 I am currently a full-time researcher and administrator in the <a href="http://ssnl.stanford.edu/" target=_blank><b>Stanford Social Neuroscience Lab</b></a>.
 <br><br>
 My research interests span social psychology, political science, and cognitive neuroscience. Broadly, I'm interested in exploring the neural and attitudinal correlates of political partisansip, as well as designing interventions to reduce polarization.
