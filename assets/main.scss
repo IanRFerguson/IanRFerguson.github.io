@@ -3,6 +3,16 @@
 
 @import "minima";
 
+body {
+  opacity: 1;
+  transition-duration: 1.0s;
+  transition-property: opacity;
+}
+
+body.fade {
+  opacity: 0;
+}
+
 /*    FOOTER OVERRIDE   */
 .site-footer {
   padding: 20px 0;
