@@ -24,7 +24,8 @@ Among my principal interests is assessing the degree to which political polariza
 <br> <br> <br>
 <b>Quantifying Responses to Debate Night</b>: 100 tweets scraped every minute during the first 2020 Presidential Debate and assessed for semantic valence
 <br> <br>
-<img src="/images/research/13.png">
+<a href="https://github.com/IanRFerguson/progressive-data-analysis/blob/master/Data-Analysis/Debate-Night-2020/Tweet-Valence.R" target=_blank>
+<img src="/images/research/13.png"></a>
 
 <br> <br> <br>
 <b>NBA Player Value</b>: 2019-2020 player salaries were predicted using stepwise AIC variable selection algorithm (spoiler: LeBron is priceless)
