@@ -17,7 +17,8 @@ Among my principal interests is assessing the degree to which political polariza
 ## Selected Projects
 ----------------
 <br>
-<b>Machine Learning in Neuroimaging</b>: Presented to the Stanford Social Neuroscience Lab's professional development series (August 2020)
+<b>Machine Learning in Neuroimaging</b>: Presented to the Stanford Social Neuroscience Lab's professional development series (August 2020) |
+<a href="https://youtu.be/-rZePX3O1cY" target=_blank>Link to Workshop</a>
 <br> <br>
 <a href="https://github.com/IanRFerguson/Python-Workshop/blob/master/02_Workshops/01_Professional-Development-Series/04_Neuroimaging/SVM%20Classifiers.ipynb" target=_blank><img src="/images/research/05.jpg"></a>
 
