@@ -20,11 +20,12 @@ I am highly passionate about supporting organizations dedicated to addressing is
 ------------------------
 
 <br> <br>
-In addition to my academic research, I play drums in the Richmond, VA based rock band The Concussion Theory and enjoy analog street photography.
+In addition to my academic research, I play drums in the Richmond, VA based rock band
+<a href="https://theconcussiontheory.bandcamp.com" target=_blank>**The Concussion Theory**</a> and enjoy
+<a href="https://www.instagram.com/human_cactus/" target=_blank>**analog street photography**</a>.
 
 <br>
 
-<div class="etc-container">
-  <a href="http://www.instagram.com/human_cactus/" target=_blank><img src="/images/07.jpg" width=350px class="etc-link"></a>
-  <a href="http://www.theconcussiontheory.bandcamp.com" target=_blank><img src="/images/04.jpg" width=300px class="etc-link"></a>
-</div>
+<center>
+<iframe style="border: 0; width: 350px; height: 687px;" src="https://bandcamp.com/EmbeddedPlayer/album=167017894/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://theconcussiontheory.bandcamp.com/album/lament">Lament by The Concussion Theory</a></iframe>
+</center>
