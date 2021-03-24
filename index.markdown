@@ -5,17 +5,27 @@
 layout: home
 ---
 <body>
-  <script src="assets/index.js"></script>
-  <div class="landing-page">
-    <div style="float: left;">
-      <br> <br>
-      <img src="/images/00.jpg" height=375px>
+
+  <div class="home-box">
+
+    <div class="home-left">
+      <img src="images/00.jpg">
     </div>
-    <div style="text-align: right;">
-      <br><br><br><br>
-      <h1><b>Hello!</b></h1>
+
+    <div class="home-right">
+      <h1>Howdy!</h1>
       <h2>I'm a social researcher<br>
       based in San Francisco</h2>
+
+      <div class="contact-me">
+        <ul>
+          <li><a href="mailto:IRF229@nyu.edu" target="_blank"><img src="images/social/gmail.svg" class="contact-icon"></a></li>
+          <li><a href="https://github.com/IanRFerguson" target=_blank><img src="images/social/github.png" class="contact-icon"></a></li>
+          <li><a href="https://www.twitter.com/human_cactus" target=_blank><img src="images/social/tweeter.svg" class="contact-icon"></a></li>
+        </ul>
+      </div>
     </div>
+
   </div>
+
 </body>
