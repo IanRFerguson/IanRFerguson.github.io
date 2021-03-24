@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Research
+title:
 permalink: /research/
 ---
-
-<script src="../assets/index.js"></script>
 
 I am currently a full-time researcher and administrator in the <a href="http://ssnl.stanford.edu/" target=_blank><b>Stanford Social Neuroscience Lab</b></a>.
 <br><br>
