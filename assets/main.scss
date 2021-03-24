@@ -3,15 +3,64 @@
 
 @import "minima";
 
-body {
-  opacity: 1;
-  transition-duration: 1.0s;
-  transition-property: opacity;
+// PAGES
+
+/*    Index     */
+.home-box {
+  display: flex;
+  padding-top: 75px;
 }
 
-body.fade {
-  opacity: 0;
+.home-left {
+  float: left;
+  padding-right: 20px;
 }
+
+.home-left img {
+  border-radius: 50%;
+  width: 1000px;
+  object-fit: scale-down;
+}
+
+.home-right {
+  float: right;
+  text-align: right;
+  padding-left: 45px;
+  padding-top: 35px;
+  width: 80%;
+}
+
+.home-right h1 {
+  font-weight: bold;
+}
+
+.contact-me {
+  float: right;
+  padding-top: 10px;
+}
+
+.contact-icon {
+  height: 40px;
+  padding-left: 15px;
+}
+
+/*     etc      */
+.etc-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.etc-container img {
+  object-fit: scale-down;
+}
+
+.etc-link {
+  padding: 5px;
+  object-fit: scale-down;
+}
+
+// GLOBAL
 
 /*    FOOTER OVERRIDE   */
 .site-footer {
@@ -39,28 +88,53 @@ body.fade {
   padding-right: 10px;
 }
 
-/*    Index     */
-.landing-page {
-  clear: both;
+ul li {
+  list-style: none;
+  display: inline-block;
 }
 
-.landing-page img {
-  object-fit: scale-down;
-}
+// FOR MOBILE
+@media only screen and (max-width: 600px) {
 
+  .home-box {
+    display: contents;
+    position: absolute;
+  }
 
-/*     etc      */
-.etc-container {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
+  .home-left {
+    padding-left: 0px;
+    padding-right: 0px;
+    float: none;
+    justify-content: center;
+  }
 
-.etc-container img {
-  object-fit: scale-down;
-}
+  .home-right {
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    text-align: center;
+    float: none;
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
-.etc-link {
-  padding: 5px;
-  object-fit: scale-down;
+  .contact-me {
+    padding-top: 10px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  .contact-icon {
+    height: 40px;
+    padding-left: 15px;
+  }
+
+  ul {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
