@@ -19,9 +19,9 @@ layout: home
 
       <div class="contact-me">
         <ul>
+          <li><a href="https://www.twitter.com/human_cactus" target=_blank><img src="images/social/tweeter.svg" class="contact-icon"></a></li>
           <li><a href="mailto:IRF229@nyu.edu" target="_blank"><img src="images/social/gmail.svg" class="contact-icon"></a></li>
           <li><a href="https://github.com/IanRFerguson" target=_blank><img src="images/social/github.png" class="contact-icon"></a></li>
-          <li><a href="https://www.twitter.com/human_cactus" target=_blank><img src="images/social/tweeter.svg" class="contact-icon"></a></li>
         </ul>
       </div>
     </div>
