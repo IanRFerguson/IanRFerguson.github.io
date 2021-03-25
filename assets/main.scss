@@ -44,6 +44,23 @@
   padding-left: 15px;
 }
 
+/*     Research     */
+.post-header {
+  margin-bottom: 0px;
+}
+
+.project-header {
+  padding-bottom: 30px;
+}
+
+.project-body {
+  padding: 50px;
+}
+
+.project-plot {
+  padding-top: 20px;
+}
+
 /*     etc      */
 .etc-container {
   align-items: center;
@@ -120,21 +137,18 @@ ul li {
   }
 
   .contact-me {
-    padding-top: 10px;
     float: none;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
   }
 
   .contact-icon {
+    padding-right: 20px;
     height: 40px;
-    padding-left: 15px;
+    justify-content: center;
+    object-fit: scale-down;
   }
 
-  ul {
+  .contact-me ul {
     margin-left: auto;
-    margin-right: auto;
   }
 
 }
