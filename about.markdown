@@ -38,5 +38,3 @@ permalink: /research/
     <a href="https://rpubs.com/Ian_Ferguson/NBA-Values" target=_blank><img src="/images/research/14.png"></a>
   </div>
 </div>
-
------------------
