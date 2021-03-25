@@ -125,6 +125,10 @@ ul li {
     justify-content: center;
   }
 
+  .home-left img {
+    border-radius: 0%;
+  }
+
   .home-right {
     margin-left: auto;
     margin-right: auto;
@@ -149,6 +153,17 @@ ul li {
 
   .contact-me ul {
     margin-left: auto;
+  }
+
+  // Research
+  .project-header {
+    text-align: center;
+  }
+
+  .project-body {
+    width: 80%;
+    padding-left: 25px;
+    text-align: center;
   }
 
 }
