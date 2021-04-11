@@ -4,6 +4,47 @@
 @import "minima";
 
 // PAGES
+h1, h2, h3, p {
+  font-family: Helvetica;
+}
+
+// GLOBAL
+
+/*    HEADER OVERRIDE   */
+.site-title, .page-link {
+  font-family: Helvetica;
+}
+
+/*    FOOTER OVERRIDE   */
+.site-footer {
+  padding: 20px 0;
+}
+
+.footer-heading {
+  text-align: center;
+}
+
+.footer-col-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-col {
+  display: inline-block;
+  width: auto;
+  padding: 0 20px;
+}
+
+.social-media-list {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+}
 
 /*    Index     */
 .home-box {
@@ -77,38 +118,6 @@
   object-fit: scale-down;
 }
 
-// GLOBAL
-
-/*    FOOTER OVERRIDE   */
-.site-footer {
-  padding: 20px 0;
-}
-
-.footer-heading {
-  text-align: center;
-}
-
-.footer-col-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer-col {
-  display: inline-block;
-  width: auto;
-  padding: 0 20px;
-}
-
-.social-media-list {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-ul li {
-  list-style: none;
-  display: inline-block;
-}
 
 // FOR MOBILE
 @media only screen and (max-width: 600px) {
