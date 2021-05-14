@@ -4,11 +4,11 @@ title:
 permalink: /research/
 ---
 <div class="project-header">
-  <p>I am currently a full-time researcher and administrator in the <a href="http://ssnl.stanford.edu/" target=_blank><b>Stanford Social Neuroscience Lab</b></a>.</p>
+  <p>I am currently a full-time researcher and administrator in the <a href="http://ssnl.stanford.edu/" target=_blank><b>Stanford Social Neuroscience Lab</b></a>, under the direction of Dr. Jamil Zaki.</p>
 
-  <p>My research interests span social psychology, political science, and cognitive neuroscience. Broadly, I'm interested in exploring the neural and attitudinal correlates of political partisansip, as well as designing interventions to reduce polarization.</p>
+  <p>My research interests span social psychology, political science, and cognitive neuroscience. Broadly, I'm interested in exploring the neural and attitudinal correlates of political partisanship, as well as designing interventions to reduce polarization.</p>
 
-  <p>Among my principal interests is assessing the degree to which political polarization influences our interactions with members of the opposite party. Analyzing the downstream effects of polarization and their covariates has certainly never been more relevant to our understanding of intergroup relations. For a primer on my research, see my <a href="https://drive.google.com/file/d/1L7G3iU2ldK4k4XYQ6jvOPC88zT1LMdg6/view?usp=sharing" target=_blank><b>Master's thesis</b></a>.</p>
+  <p>Specifically, I am motivated to identify the affective components that drive polarization at a personal level - for example, moral framing and syntax when structuring appeals. My work employs an array of methodological approaches, ranging from natural language processing and web scraping to more traditional experimental designs. For a primer on my research, see my <a href="https://drive.google.com/file/d/1L7G3iU2ldK4k4XYQ6jvOPC88zT1LMdg6/view?usp=sharing" target=_blank><b>Master's thesis</b></a>, developed at NYU under the guidance of <a href="http://www.jonbfreeman.com" target=_blank><b>Dr. Jon Freeman</b></a> and <a href="https://dongwonoh.com" target=_blank><b>Dr. DongWon Oh</b></a>.</p>
 </div>
 
 
