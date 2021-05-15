@@ -6,6 +6,10 @@ layout: home
 ---
 <body>
 
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+
   <div class="home-box">
 
     <div class="home-left">
@@ -19,7 +23,7 @@ layout: home
 
       <div class="contact-me">
         <ul>
-          <li><a href="https://www.twitter.com/human_cactus" target=_blank><img src="images/social/twitter.png" class="contact-icon"></a></li>
+          <li><a href="https://www.twitter.com/human_cactus" target=_blank><img src="images/social/tweeter2-2.svg" class="contact-icon"></a></li>
           <li><a href="mailto:IRF229@nyu.edu" target="_blank"><img src="images/social/email.svg" class="contact-icon"></a></li>
           <li><a href="https://github.com/IanRFerguson" target=_blank><img src="images/social/github.png" class="contact-icon"></a></li>
         </ul>
