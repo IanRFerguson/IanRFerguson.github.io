@@ -9,7 +9,7 @@ layout: home
   <div class="home-box">
 
     <div class="home-left">
-      <img src="images/00.jpg">
+      <img src="images/ian.jpg">
     </div>
 
     <div class="home-right">
