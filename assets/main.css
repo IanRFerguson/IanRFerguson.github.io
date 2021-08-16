@@ -55,6 +55,7 @@ body {
 
 .nav {
       overflow: hidden;
+      justify-content: center;
 }
 
 .active {
@@ -145,8 +146,7 @@ body {
 }
 
 .about-box h1 {
-      font-style: italic;
-      padding-bottom: 10px;
+      text-align: center;
 }
 
 .about-box p {
@@ -201,7 +201,13 @@ body {
             font-size: 200%;
       }
 
-      #landing, #about, #projects {
+      #landing {
+            height: 100%;
+            width: auto;
+            padding: 0;
+      }
+
+      #about, #projects {
             height: auto;
             width: auto;
             padding: 0;
@@ -210,7 +216,11 @@ body {
       .home-box {
             display: contents;
             position: absolute;
-      } 
+      }
+      
+      .home-box-right {
+            padding-bottom: 10%;
+      }
 
       .home-left img {
             border-radius: 0;
@@ -261,7 +271,13 @@ body {
             font-size: 200%;
       }
 
-      #landing, #about, #projects {
+      #landing {
+            height: 100%;
+            width: auto;
+            padding: 0;
+      }
+
+      #about, #projects {
             height: auto;
             width: auto;
             padding: 0;
@@ -288,7 +304,13 @@ body {
             font-size: 200%;
       }
 
-      #landing, #about, #projects {
+      #landing {
+            height: 100%;
+            width: auto;
+            padding: 0;
+      }
+
+      #about, #projects {
             height: auto;
             width: auto;
             padding: 0;
