@@ -15,6 +15,7 @@
             <div class="nav">
                   <a class="active" href="#landing">Ian Richard Ferguson, M.A.</a>
             </div>
+
             <section id="landing">
                   <div class="home-box">
                         <div class="home-left">
@@ -25,20 +26,30 @@
                               <h2>I'm a social researcher <br>
                               based in San Francisco
                               </h2>
-                              <div class="social">
-                                    <img class="social-link" src="./assets/social/twitter_0">
-                                    <img class="social-link" src="./assets/social/email_0">
-                                    <img class="social-link" src="./assets/social/github_0">
-                              </div>
+                        </div>
+                        <div class="social">
+                              <ul>
+                                    <li>
+                                          <a href="https://twitter.com/human_cactus" target=_blank>
+                                                <img src="./assets/social/bold_twitter.png" class="social-item">
+                                          </a>
+                                    </li>
+                                    <li>
+                                          <a href="mailto:irf229@nyu.edu" target=_blank>
+                                                <img src="./assets/social/bold_email.svg" class="social-item">
+                                          </a>
+                                    </li>
+                                    <li>
+                                          <a href="https://github.com/IanRFerguson" target=_blank>
+                                                <img src="./assets/social/bold_git.png" class="social-item">
+                                          </a>
+                                    </li>
+                              </ul>
                         </div>
                   </div>
             </section>
 
             <section id="about">
-                  <a href="#landing">
-                        <img src="./assets/images/noggin.png" class="take-me-home">
-                  </a>
-
                   <div class="about-box">
                         <h1>About Me</h1>
                         <p>
@@ -52,17 +63,59 @@
                               using science to <i>reduce downstream polarization</i> via interventions (e.g., semantic analysis and priming)
                         </p>
                         <p>
-                              
+                              For a primer on this work, see my 
+                              <a href="https://drive.google.com/file/d/1L7G3iU2ldK4k4XYQ6jvOPC88zT1LMdg6/view" target=_blank>
+                              Master's Thesis</a>, developed at NYU under the guidance of Dr. Jon Freeman and Dr. DongWon Oh
                         </p>
                   </div>
-
-                  <div class="about-box">
-                        <h1>Selected Projects</h1>
-                        <p>
-                              let's talk about brains
-                        </p>
-                  </div>
-
             </section>
+
+            <section id="projects">
+                  <div class="about-box">
+                        <h1>Selected Projects</h1> 
+                        <div class="research-item">
+                              <h4>Assessing Predictors of Threat Perception in Mixed-Race Groups</h4>
+                              <p>
+                                    A subset of participants were primed information that their social class (white Americans) would lose
+                                    social dominance in the next 50 years.
+                                    They then evaluated a number of mixed race groups, and determined the degree to which the group
+                                    appeared threatening. Pariticipants primed with
+                                    future status loss reported higher ratings of threat in majority-Latino ensembles than control
+                                    participants.
+                              </p>
+                              <a href="https://drive.google.com/file/d/1L7G3iU2ldK4k4XYQ6jvOPC88zT1LMdg6/view" target=_blank>
+                                    <img src="./assets/research/ensemble.png">
+                              </a>
+                        </div>
+                        <div class="research-item">
+                              <h4>Basic Neuroimaging Analysis with Python</h4>
+                              <p>
+                                    A quick and dirty example of applying machine learning algorithms to high-dimensional neuroimaging
+                                    data. More work in this area coming soon!
+                              </p>
+                              <a href="https://github.com/IanRFerguson/Python-Workshop/blob/master/02_Workshops/01_Professional-Development-Series/04_Neuroimaging/SVM%20Classifiers.ipynb"
+                                    target=_blank>
+                                    <img src="./assets/research/ml-in-neuro.jpg">
+                              </a>
+                        </div>
+                        <div class="research-item">
+                              <h4>Quantifying Response to Candidates in Real-Time</h4>
+                              <p>
+                                    I wrote a Python script to scrape tweets every minute for the duration of the first Presidential
+                                    debate. The tweets were then
+                                    assessed for semantic valence and averaged, giving us a (very) rough estimate of affective response to
+                                    each candidate's performance
+                                    in real-time
+                              </p>
+                              <a href="https://github.com/IanRFerguson/progressive-data-analysis/blob/master/Data-Analysis/Debate-Night-2020/Tweet-Valence.R"
+                                    target=_blank>
+                                    <img src="./assets/research/election.png">
+                              </a>
+                        </div>
+                  </div>
+            </section>
+
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+            <script src="./assets/ripper.js"></script>
       </body>
 </html>
