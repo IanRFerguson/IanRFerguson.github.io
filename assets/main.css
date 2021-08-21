@@ -130,6 +130,10 @@ body {
       padding: 0px 25px;
 }
 
+.social-item.resize {
+      height: auto;
+}
+
 
 /* About */
 #about {
@@ -298,6 +302,10 @@ body {
             text-align: center;
       }
 
+      .nav a {
+            font-size: larger;
+      }
+
       h1 {
             font-size: 350%;
       }
@@ -310,6 +318,14 @@ body {
             height: auto;
             width: auto;
             padding: 0;
+      }
+
+      .social ul {
+            margin: auto;
+      }
+
+      .social-item {
+            height: 3%;
       }
 
       .about-box h1 {
