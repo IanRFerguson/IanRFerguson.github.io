@@ -279,13 +279,7 @@ body {
             font-size: 200%;
       }
 
-      #landing {
-            height: 100%;
-            width: auto;
-            padding: 0;
-      }
-
-      #about, #projects {
+      #landing, #about, #projects {
             height: auto;
             width: auto;
             padding: 0;
@@ -312,13 +306,7 @@ body {
             font-size: 200%;
       }
 
-      #landing {
-            height: 100%;
-            width: auto;
-            padding: 0;
-      }
-
-      #about, #projects {
+      #landing, #about, #projects {
             height: auto;
             width: auto;
             padding: 0;
@@ -326,5 +314,9 @@ body {
 
       .about-box h1 {
             font-style: normal;
+      }
+
+      .research-item img {
+            width: 85%;
       }
 }
