@@ -24,6 +24,10 @@ body {
             animation: fadein 2s;
 }
 
+body::before {
+      background-color: black;
+}
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -114,39 +118,12 @@ body {
 }
 
 .salutations-greetings {
-      padding: 20px 0;
+      padding: 4.5% 0;
 }
 
 .salutations h1 {
       font-weight: bolder;
 }
-
-.social {
-      color: black;
-      background: white;
-      margin: auto;
-      width: 50%;
-      text-align: center;
-}
-
-.social ul {
-      padding: 10px 10px;
-}
-
-.social li {
-      list-style: none;
-      display: inline-block;
-}
-
-.social-item {
-      height: 25px;
-      padding: 0px 25px;
-}
-
-.social-item.resize {
-      height: auto;
-}
-
 
 /* About */
 #about {
@@ -180,6 +157,10 @@ body {
       padding: 10px 0px;
 }
 
+.about-box h3 {
+      text-align: center;
+}
+
 .about-box a {
       color: white;
 }
@@ -197,7 +178,39 @@ body {
 .about-box img {
       display: block;
       margin: auto;
-      width: 600px;
+}
+
+.contact-me {
+      padding: 85px 0;
+}
+
+.social {
+      color: black;
+      background: white;
+      margin: auto;
+      width: 50%;
+      height: 50px;
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 25px;
+}
+
+.social ul {
+      padding: 10px 10px;
+}
+
+.social li {
+      list-style: none;
+      display: inline-block;
+}
+
+.social-item {
+      height: 50%;
+      padding: 0px 25px;
+}
+
+.social-item.resize {
+      height: auto;
 }
 
 
@@ -211,6 +224,12 @@ body {
       border: 2px solid black;
 }
 
+.research-item img {
+      display: block;
+      margin: auto;
+      width: 75%;
+}
+
 
 /* MOBILE CSS */
 @media only screen and (max-width: 500px) {
@@ -221,11 +240,15 @@ body {
       }
 
       h1 {
-            font-size: 350%;
+            font-size: 7.5vw;
       }
 
       h2 {
-            font-size: 200%;
+            font-size: 5.5vw;
+      }
+
+      h3 {
+            font-size: 4vw;
       }
 
       #landing {
@@ -240,19 +263,25 @@ body {
             padding: 0;
       }
       
-      .home-box {
-            display: contents;
-            position: absolute;
-      }
-      
-      .home-box-right {
-            padding-bottom: 10%;
+      .salutations {
+            position: relative;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
       }
 
-      .home-left img {
-            border-radius: 0;
-            max-width: 100%;
-      }
+      .background-parent h1 {
+            font-size: 7.5vw;
+     }
+
+     .background-parent h3 {
+           font-size: 4vw;
+     }
+
+     .background-parent img {
+            width: 90%;
+     }
 
       .social {
             width: auto;
@@ -271,8 +300,8 @@ body {
             padding-top: 5%;
       }
 
-      .about-box img {
-            width: 85%;     
+      .about-box p {
+            font-size: 3vw;
       }
 
       .research-item {
@@ -322,11 +351,19 @@ body {
       }
 
       h1 {
-            font-size: 350%;
+            font-size: 8vw;
       }
 
       h2 {
-            font-size: 200%;
+            font-size: 5.5vw;
+      }
+
+      h3 {
+            font-size: 4.5vw;
+      }
+
+      h4 {
+            font-size: 4vw;
       }
 
       #landing, #about, #projects {
@@ -340,7 +377,8 @@ body {
       }
 
       .social-item {
-            height: 3%;
+            padding: 0 10px;
+            margin: auto;
       }
 
       .about-box h1 {
