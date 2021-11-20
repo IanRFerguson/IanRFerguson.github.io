@@ -81,6 +81,7 @@ body {
       color: white;
       height: auto;
       width: 100%;
+      border: 2px solid black;
 }
 
 .home-box {
@@ -143,6 +144,7 @@ body {
       color: white;
       margin: 0;
       padding: 0% 20%;
+      border: 1px solid black;
 }
 
 .about-box {
@@ -194,6 +196,7 @@ body {
       color: white;
       margin: 0;
       padding: 0% 20%;
+      border: 1px solid black;
 }
 
 
