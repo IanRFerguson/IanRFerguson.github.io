@@ -117,6 +117,7 @@ body::before {
       border-radius: 50%;
       display: block;
       margin: auto;
+      border: 1px solid black;
 }
 
 .salutations-greetings {
