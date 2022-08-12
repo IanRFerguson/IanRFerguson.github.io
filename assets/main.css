@@ -14,6 +14,10 @@ palette <- c("#00798c", "#d1495b", "#edae49", "#66a182", "#2e4057", "#8d96a3", "
                   crossorigin="anonymous"></script>
 */
 
+section {
+      padding: 0%;
+}
+
 body {
       font-family: monospace;
 
@@ -192,7 +196,19 @@ body::before {
       padding-bottom: 10px;
 }
 
+.social-icon-nav {
+      width: 30px;
+      padding: 2px 2px;
+}
 
+.experience-box {
+      text-align: center;
+      padding: 20px 0px;
+}
+
+.experience-box h5 {
+      font-weight: bold;
+}
 
 /* Projects */
 #projects {
