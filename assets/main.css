@@ -28,6 +28,7 @@ body::before {
       background-color: black;
 }
 
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -90,7 +91,7 @@ body::before {
       justify-content: center;
       margin: 0;
 
-      background: url("./images/surfs-up.jpg");
+      background: url("./images/unique_ny.jpg");
       background-repeat: no-repeat;
       border: 2px solid black;
       background-size: cover;
@@ -103,7 +104,7 @@ body::before {
       right: 0px;
       bottom: 0px;
       left: 0px;
-      background-color: rgba(255, 255, 255, 0.45);
+      background-color: rgba(255, 255, 255, 0.60);
 }
 
 .salutations {
@@ -191,34 +192,6 @@ body::before {
       padding-bottom: 10px;
 }
 
-.social {
-      color: black;
-      background: white;
-      margin: auto;
-      width: 50%;
-      height: 50px;
-      text-align: center;
-      border: 1px solid black;
-      border-radius: 25px;
-}
-
-.social ul {
-      padding: 10px 10px;
-}
-
-.social li {
-      list-style: none;
-      display: inline-block;
-}
-
-.social-item {
-      height: 50%;
-      padding: 0px 15px;
-}
-
-.social-item.resize {
-      height: auto;
-}
 
 
 /* Projects */
