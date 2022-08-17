@@ -63,14 +63,26 @@ body::before {
 }
 
 .nav {
-      background: white;
       color: black;
       overflow: hidden;
       justify-content: center;
-      /*position: fixed;*/
       left: 0;
       right: 0;
       z-index: 999;
+}
+
+.bg-light {
+      background-color: rgba(255, 255, 255, 0.95)!important;
+}
+
+.sm-icons {
+      flex-direction: row;
+}
+
+@media only screen and (max-width: 960px) {
+      .sm-icons .nav-item {
+            padding-right: 1em;
+      }
 }
 
 .active {
