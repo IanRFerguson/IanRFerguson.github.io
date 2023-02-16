@@ -9,7 +9,7 @@
     <link rel="icon" type="icon/png" href="{{ url_for('static', filename='images/noggin.png') }}">
 
     <!--- Bootstrap CSS --->
-    <link rel=" stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
     <!-- Custom CSS-->
@@ -17,7 +17,7 @@
     {% endblock %}
 
     <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
-
+    <link rel="stylesheet" href="{{ url_for('static', filename='animations.css') }}">
     <title>
         {% block title %}
         {% if title %}
@@ -39,17 +39,17 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <a clas="navbar-link" href="#">Research</a>
+            <li class="nav-item">
+                <a clas="navbar-link" href="#">Research</a>
+            </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
-                    Dropdown
+                    Portfolio Projects
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">New York WiFi Map</a>
+                    <a class="dropdown-item" href="#">Miles Tracker</a>
                 </div>
             </li>
         </div>

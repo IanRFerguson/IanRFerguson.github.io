@@ -3,6 +3,16 @@
 
 <body>
       {% block content %}
+      <div class="wrapper">
+            <div class="index_box">
+                  <div class="index_left" style="float: left;">
+                        <h2>Howdy! I'm Ian</h2>
+                  </div>
+                  <div class="index_right" style="float: right;">
+                        <img src="{{ url_for('static', filename='images/ian_old.jpg') }}" class="howdy_ian">
+                  </div>
+            </div>
+      </div>
       {% endblock %}
 
       {% block scripts %}
