@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+<body>
+    {% block content %}
+
+    <div class="add_box">
+        <h4>Add a New Hotspot</h4>
+    </div>
+
+    <div class="add_box">
+        <form action="{{ url_for('add') }}" method="POST" class="intake_form">
+            <div class="add_box">
+                <label for="venue_name">Venue Name</label>
+                <br>
+                <input type="text" id="venue_name" name="venue_name">
+            </div>
+            
+            <div class="add_box">
+                <label for="street_address">Street Address</label>
+                <br>
+                <input type="text" id="street_address" name="street_address">
+            </div>
+            
+            <div class="add_box">
+                <label for="city">City</label>
+                <br>
+                <input type="text" id="city" name="city">
+            </div>
+            
+            <div class="add_box">
+                <label for="venue_type">Venue Type</label>
+                <br>
+                <select name="venue_type" id="venue_type">
+                    <option value="None"></option>
+                    <option value="coffee">Coffee Shop</option>
+                    <option value="bar">Bar / Restaurant</option>
+                    <option value="hotel">Hotel Lobby</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <div class="add_box">
+                <label for="submitted_by">Submitted By (Optional)</label>
+                <br>
+                <input type="text" id="submitted_by" name="submitted_by">
+            </div>
+            
+            <div class="add_box">
+                <label for="comments">Comments (Optional)</label>
+                <br>
+                <input type="text" id="comments" name="comments">
+            </div>
+        
+            <input type="submit">
+        
+        </form>
+    </div>
+
+    {% endblock %}
+</body>

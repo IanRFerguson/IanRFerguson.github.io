@@ -241,8 +241,6 @@ body::before {
 
 /* Thanks */
 #thanks {
-      background-color: black;
-      color: white;
       text-align: center;
       height: 25px;
 }
