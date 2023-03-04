@@ -86,10 +86,58 @@ li {
       text-decoration: none;
 }
 
+.nav-item {
+      font-size: 125%;
+}
+
 /* Index */
+.index_box {
+      width: 100%;
+      height: 100%
+}
+
+/* Left box */
+.index_left {
+      width: 50%;
+      float: left;
+}
+
 .howdy_ian {
-      width: 28%;
+      width: 75%;
       border-radius: 50%;
+}
+
+/* Right box */
+.index_right {
+      margin-left: 50%;
+}
+
+.about_me_content {
+      margin-top: 5%;
+}
+
+.about_me_list {
+      font-size: 165%;
+      text-align: left;
+}
+
+.contact_button {
+      width: 5%;
+      padding: 0.75%;
+}
+
+/* Academic page */
+.ac_project_box {
+      margin: 2.5%;
+      padding: 2.5%;
+}
+
+.ac_project_box img {
+      padding: 2%;
+}
+
+.ac_project_box p {
+      font-size: 150%;
 }
 
 
@@ -97,8 +145,8 @@ li {
 .wrapper {
       min-height: 100%;
       margin-bottom: -50px;
-      margin: 10%;
-      padding: 20%;
+      margin: 2%;
+      padding: 2%;
 }
 
 footer {

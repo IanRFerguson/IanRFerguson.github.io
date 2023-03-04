@@ -8,3 +8,8 @@ from app.routes import bp
 @bp.route("/home", methods=["GET", "POST"])
 def index():
     return render_template("index.html")
+
+
+@bp.route("/acadmic_projects", methods=["GET"])
+def academics():
+    return render_template("academics.html")
