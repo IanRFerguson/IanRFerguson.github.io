@@ -15,9 +15,10 @@ def create_app():
 
     app.register_blueprint(main_routes)
 
-    ### - Basketball interface
-
     ### - Miles tracker
+    from app.miles import bp as miles
+
+    app.register_blueprint(miles, url_prefix="/miles")
 
     ### - New York WiFi
     from app.new_york import bp as new_york

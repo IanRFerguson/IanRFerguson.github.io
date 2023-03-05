@@ -1,48 +1,51 @@
 <html>
-    <head>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" 
-              href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-              integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
-              crossorigin="anonymous">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="static/main.css">
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-        <!-- Icon -->
-        <link>
-    </head>
-    <body>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="{{ url_for('index') }}">
-                <b>NYC Wifi Hotspots</b>
-            </a>
-            <a class="navbar-link" href="{{ url_for('add') }}">
-                Add Hotspot  
-            </a>
-            <a class="navbar-link" href="{{ url_for('view') }}">
-                View Hotspots
-            </a>
-            <a class="navbar-link" href="{{ url_for('upvote') }}">
-                Upvote Hotspots
-            </a>
-            
-        </nav>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='new_york.css') }}">
 
-        <!-- Page Content -->
-        {% block content %}
-        {% endblock %}
+    <!-- Icon -->
+    <link>
+</head>
 
-        <!-- Handle messages -->
-        {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                <ul class="flashes">
-                    {% for message in messages %}
-                        <li>{{ messsage }}</li>
-                    {% endfor %}
-                </ul>
-            {% endif %}
-        {% endwith %}
-    </body>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="{{ url_for('new_york.index') }}">
+            <b>NYC Wifi Hotspots</b>
+        </a>
+        <a class="navbar-link" href="{{ url_for('new_york.add') }}">
+            Add Hotspot
+        </a>
+        <a class="navbar-link" href="{{ url_for('new_york.view') }}">
+            View Hotspots
+        </a>
+        <a class="navbar-link" href="{{ url_for('new_york.upvote') }}">
+            Upvote Hotspots
+        </a>
+        <a class="navbar-link" href="{{ url_for('main.index') }}">
+            Home
+        </a>
+    </nav>
+
+    <!-- Page Content -->
+    {% block content %}
+    {% endblock %}
+
+    <!-- Handle messages -->
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul class="flashes">
+        {% for message in messages %}
+        <li>{{ messsage }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+</body>
+
 </html>

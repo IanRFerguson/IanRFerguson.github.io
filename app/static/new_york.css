@@ -1,0 +1,41 @@
+/* Main CSS */
+
+body {
+    font-family: monospace;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.hotspot_map iframe {
+    width: 90%;
+    height: 90%;
+}
+
+.navbar * {
+    text-align: center;
+}
+
+
+.navbar-link {
+    padding: 0% 5%;
+    color: black;
+}
+
+
+.add_box {
+    padding: 1%;
+    padding-top: 0;
+    ;
+    padding-bottom: 2.5%;
+}
+
+.add_box input {
+    padding: 5px;
+}
+
+
+.view_box {
+    padding: 3% 0;
+}
