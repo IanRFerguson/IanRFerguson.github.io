@@ -69,6 +69,13 @@ li {
       flex-direction: row;
 }
 
+footer {
+      margin: 2%;
+      padding: 2%;
+      height: 50px;
+
+}
+
 @media only screen and (max-width: 960px) {
       .sm-icons .nav-item {
             padding-right: 1em;
@@ -93,7 +100,8 @@ li {
 /* Index */
 .index_box {
       width: 100%;
-      height: 100%
+      height: 100%;
+      padding-bottom: 2%;
 }
 
 /* Left box */
@@ -125,9 +133,14 @@ li {
       margin: 0 auto;
 }
 
+.contact_me_icons {
+      float: left;
+      padding-left: 10px;
+}
+
 .contact_button {
       width: 5%;
-      padding: 0.75%;
+      padding: 0.9%;
 }
 
 /* Academic page */
@@ -152,10 +165,4 @@ li {
       margin-bottom: -50px;
       margin: 2%;
       padding: 2%;
-}
-
-footer {
-      height: 50px;
-      margin-top: -50px;
-
 }

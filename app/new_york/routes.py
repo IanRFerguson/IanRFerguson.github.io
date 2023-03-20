@@ -1,21 +1,20 @@
 #!/bin/python3
 import os, pathlib
 from time import sleep
-from .helper.map import MapHandler
-from .helper.db import handle_request, init_db, read_db, update_rank
+from app import here
+from app.new_york import bp
+from app.new_york.helper.map import MapHandler
+from app.new_york.helper.db import handle_request, init_db, read_db, update_rank
+from pandas.io.sql import DatabaseError
 
 from flask import (
     render_template,
     request,
-    Flask,
     redirect,
     send_file,
     url_for,
     flash,
 )
-
-from app import here
-from app.new_york import bp
 
 
 if not os.path.exists(os.path.join(here, "new_york", "nyc.db")):
@@ -64,14 +63,24 @@ def add():
 
         return render_template("new_york/success.html", address=address_string.upper())
 
-    return render_template("new_york/add.html")
+    try:
+        return render_template("new_york/add.html")
+
+    except DatabaseError as e:
+        flash(e)
+        return redirect(url_for("new_york.index"))
 
 
 @bp.route("/view_hotspots", methods=["GET", "POST"])
 def view():
     data = read_db()
 
-    return render_template("new_york/view.html", data=data.values.tolist())
+    try:
+        return render_template("new_york/view.html", data=data.values.tolist())
+
+    except DatabaseError as e:
+        flash(e)
+        return redirect(url_for("new_york.index"))
 
 
 @bp.route("/upvote", methods=["GET", "POST"])
@@ -98,7 +107,12 @@ def upvote():
 
         return redirect(url_for("new_york.index"))
 
-    return render_template("new_york/upvote.html", data=feed)
+    try:
+        return render_template("new_york/upvote.html", data=feed)
+
+    except DatabaseError as e:
+        flash(e)
+        return redirect(url_for("new_york.index"))
 
 
 @bp.route("/hotspots", methods=["GET", "POST"])
