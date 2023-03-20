@@ -1,0 +1,97 @@
+/* Mobile Devices */
+@media (max-width: 600px) {
+    .wrapper {
+        margin: 0 auto;
+    }
+
+    .index_left {
+        width: auto;
+        padding-bottom: 8%;
+    }
+
+    .index_right {
+        margin-left: auto;
+    }
+
+    .contact_me_content {
+        padding-bottom: 5%;
+        display: inline-block;
+    }
+
+    .contact_me_content h4 {
+        margin: 0 auto;
+    }
+
+    .contact_me_icons {
+        margin: 0 auto;
+    }
+
+    .contact_button {
+        width: 9%;
+    }
+
+    footer {
+        display: none;
+    }
+
+    /* Academic Page */
+    .ac_project_box {
+        width: auto;
+    }
+
+    .ac_project_box img {
+        margin: 0 auto;
+        width: 85%;
+    }
+}
+
+/* Medium format */
+@media (max-width: 959px) {
+    body {
+        font-size: small;
+    }
+
+    .wrapper {
+        margin: 0 auto;
+    }
+
+    .index_left {
+        width: auto;
+        padding-bottom: 8%;
+    }
+
+    .index_right {
+        margin-left: auto;
+    }
+
+    .contact_me_content {
+        padding-bottom: 5%;
+        display: inline-block;
+    }
+
+    .contact_me_content h4 {
+        margin: 0 auto;
+    }
+
+    .contact_me_icons {
+        margin: 0 auto;
+    }
+
+    .contact_button {
+        width: 5%;
+    }
+
+    footer {
+        display: none;
+    }
+
+    /* Academic Page */
+    .ac_project_box {
+        width: auto;
+    }
+
+    .ac_project_box img {
+        margin: 0 auto;
+        width: 85%;
+    }
+}

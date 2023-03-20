@@ -1,0 +1,61 @@
+<html>
+{% extends "base.html" %}
+
+<body>
+    {% block content %}
+    <div class="wrapper">
+        <h1>Selected Academic Works</h1>
+        <!-- GLM Express -->
+        <div class="ac_project_box" style="margin-top: 0;">
+            <h2>GLM Express</h2>
+            <img src="{{ url_for('static', filename='research/GLMX.png') }}">
+            <p>
+                Developed during my time at the <a href="https://www.ssnl.stanford.edu"><b>Stanford Social Neuroscience
+                        Lab</b></a>, this Python package provides a general wrapper for basic individual and group-level
+                fMRI Generalized Linear Models. This package is built on <a
+                    href="https://nilearn.github.io/stable/index.html">Nilearn</a>, and is optimized to work on any BIDS
+                validated project.
+            </p>
+            <a href="https://github.com/IanRFerguson/glm-express" target="_blank">
+                <p><b>View on Github</b></p>
+            </a>
+
+        </div>
+
+        <!-- NYU Master's Thesis -->
+        <div class="ac_project_box">
+            <h2>NYU Master's Thesis</h2>
+            <h4>
+                <i>Assessing Predictors of Threat Perception in Mixed-Race Groups</i>
+            </h4>
+            <img src="{{ url_for('static', filename='research/thesis.png') }}">
+            <p>
+                Developed under the direction of Dr. Jon Freeman and Dr. DongWon Oh, this project explored the cognitive
+                effects of
+                status threat in non-Hispanic white social targets. After a threat prime, participants rated
+                ensembles of mixed-race groups on several dimensions. A GEE model offered evidence for a linear trend,
+                such that as the
+                number of Hispanic social targets increased the group was rated as more threatening.
+            </p>
+            <a href="https://github.com/IanRFerguson/nyu-thesis" target="_blank">
+                <p><b>View on Github</b></p>
+            </a>
+            <a href="https://drive.google.com/file/d/1L7G3iU2ldK4k4XYQ6jvOPC88zT1LMdg6/view?usp=share_link"
+                target="_blank">
+                <p><b>Read the Manuscript</b></p>
+            </a>
+        </div>
+
+        <!-- Census Project -->
+        <!-- TBD ... -->
+        <!-- Publications -->
+        <!--div class="ac_project_box">
+            <h2>Publications</h2>
+            <h2>Conference Presentations</h2>
+        </div-->
+    </div>
+
+    {% endblock %}
+</body>
+
+</html>
