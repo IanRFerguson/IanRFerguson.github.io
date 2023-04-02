@@ -1,11 +1,5 @@
-# Ian Is Online
+## We've moved!
 
-## Where Things Live
+Head over to **www.ianrferguson.com** for the good stuff 
 
-* The core Flask routing is in `app/` ... standard conventions apply
-* `miles/` - Routing to catch, store, and present SMS messages
-* `new_york/` - Routing to run the New York Wifi Map application
-
-## Running To-Do
-
-* Add helper function to push incoming data to BigQuery
+<img src="https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2022%2F0220%2Fr976761_1296x729_16%2D9.jpg" width=85%>
