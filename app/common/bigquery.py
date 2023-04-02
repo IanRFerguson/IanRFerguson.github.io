@@ -23,9 +23,17 @@ class BQHelper:
 
     def __init__(self, dataset_id: str = "web", table_id: str = "miles"):
 
-        creds = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
-        creds_dict = json.loads(creds)
-        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = creds
+        if not os.path.exists("/home/ianfergusonNYU/00_PACKETS/service.json"):
+            os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.environ.get(
+                "GOOGLE_APPLICATION_CREDENTIALS"
+            )
+
+        else:
+            os.environ[
+                "GOOGLE_APPLICATION_CREDENTIALS"
+            ] = "/home/ianfergusonNYU/00_PACKETS/service.json"
+
+        ###
 
         self.client = bigquery.Client()
         self.dataset = dataset_id
