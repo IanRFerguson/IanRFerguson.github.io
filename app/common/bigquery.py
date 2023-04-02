@@ -23,10 +23,9 @@ class BQHelper:
 
     def __init__(self, dataset_id: str = "web", table_id: str = "miles"):
 
-        creds = json.loads(os.environ.get("GOOGLE_SERVICE_CREDS"))
-        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.environ.get(
-            "GOOGLE_SERVICE_CREDS"
-        )
+        creds = os.environ.get("GOOGLE_SERVICE_CREDS")
+        creds_dict = json.loads(creds)
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = creds
 
         self.client = bigquery.Client()
         self.dataset = dataset_id
