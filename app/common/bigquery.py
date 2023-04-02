@@ -27,14 +27,15 @@ class BQHelper:
         creds_dict = json.loads(creds)
         os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = creds
 
-        self.client = bigquery.Client()
+        self.client = bigquery.Client(self.credentials)
         self.dataset = dataset_id
         self.table = table_id
 
+    @property
     def credentials(self) -> dict:
         """Reads credentials from production environment"""
 
-        raw = os.environ.get("GOOGLE_SERVICE_CREDS")
+        raw = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
         scopes = ["https://www.googleapis.com/auth/cloud-platform"]
         loaded = json.loads(raw)
 
