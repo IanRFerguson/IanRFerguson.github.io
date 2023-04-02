@@ -23,7 +23,7 @@ class BQHelper:
 
     def __init__(self, dataset_id: str = "web", table_id: str = "miles"):
 
-        creds = os.environ.get("GOOGLE_SERVICE_CREDS")
+        creds = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
         creds_dict = json.loads(creds)
         os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = creds
 
