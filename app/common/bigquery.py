@@ -35,7 +35,7 @@ class BQHelper:
 
         ###
 
-        self.client = bigquery.Client()
+        self.client = bigquery.Client(project="ian-is-online")
         self.dataset = dataset_id
         self.table = table_id
 
