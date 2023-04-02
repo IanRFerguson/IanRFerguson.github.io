@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from datetime import datetime
 import random
 import logging
+from time import sleep
 
 from app import here
 from app.common.bigquery import BQHelper
@@ -34,42 +35,71 @@ def receive_request(**kwargs):
     if kwargs["from_"] == "+17038190646":
 
         message_body = kwargs["body"].strip().lower()
+        logging.info(message_body)
+
+        try:
+            k = float(message_body)
+            can_parse = True
+        except:
+            can_parse = False
 
         if message_body == "miles":
-            outgoing_wrapper(message_type="miles")
+            outgoing_wrapper(message_type="initial")
+
+        elif can_parse:
+            # Numeric representation of text body
+            numeric_value = float(message_body)
+
+            # All miles run in warehouse
+            all_miles = (
+                bq.get_all_miles(year=datetime.now().strftime("%Y")) + numeric_value
+            )
+
+            outgoing_wrapper(message_type="miles", all_miles=all_miles)
 
         else:
-            try:
-                numeric_value = float(message_body)
-
-            except:
-                outgoing_wrapper()
+            outgoing_wrapper()
 
     # Ingest all texts to BigQuery
+    payload = {
+        "created": kwargs["time"],
+        "sent_to": kwargs["to"],
+        "sent_from": kwargs["from_"],
+        "body": kwargs["body"],
+    }
+
+    bq.push_to_db(payload=payload)
 
 
-def outgoing_wrapper(message_type: str = None):
+def outgoing_wrapper(message_type: str = None, all_miles: float = None):
     """Sends a message to Ian depending on the conditional"""
 
     comment = generate_nice_comment()
 
     if message_type == "initial":
-        message_body = f"Respond to this text with your miles run today\n{comment}"
+        message_body = f"Respond to this text with your miles run today\n\n{comment}"
 
     elif message_type == "miles":
-        all_miles = bq.get_all_miles(year=datetime.now().strftime("%Y"))
-        message_body = f"You've run {all_miles} miles this year!\n{comment}"
+        all_miles = round(all_miles, 2)
+        message_body = f"You've run {all_miles} miles this year!\n\n{comment}"
 
     else:
         message_body = (
             "I don't have a good answer for that, but I hope you have a nice day!"
         )
 
-    message = client.messages.create(
-        body=message_body,
-        from_=my_number,
-        to="+17038190646",
-    )
+    try:
+        message = client.messages.create(
+            body=message_body,
+            from_=my_number,
+            to="+17038190646",
+        )
+
+        return 0
+
+    except Exception as e:
+        logging.error(e)
+        return 1
 
 
 def generate_nice_comment() -> str:

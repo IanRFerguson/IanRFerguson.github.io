@@ -27,11 +27,15 @@ def sms():
     """This endpoint will receive incoming SMS POST requests from Twilio"""
 
     # receive_request()
-    sent_to = request["To"]
-    sent_from = request["From"]
-    sent_body = request["Body"]
+    sent_to = request.form["To"]
+    sent_from = request.form["From"]
+    sent_body = request.form["Body"]
     current_time = datetime.now().strftime("%Y-%m-%d")
 
-    receive_request(to=sent_to, from_=sent_from, body=sent_body, time=current_time)
+    try:
+        receive_request(to=sent_to, from_=sent_from, body=sent_body, time=current_time)
+        return "Success"
 
-    return 1
+    except Exception as e:
+        logging.error(e)
+        return "Failure"

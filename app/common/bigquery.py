@@ -6,6 +6,7 @@ from google.cloud import bigquery
 from oauth2client.service_account import ServiceAccountCredentials
 from datetime import datetime
 import logging
+from time import sleep
 
 from app import here
 
@@ -20,37 +21,64 @@ class BQHelper:
     Simple wrapper to intake and process data to Google BigQuery
     """
 
-    def __init__(self):
-        self.client = bigquery.Client(credentials=self.credentials)
-        self.dataset = "web"
-        self.table = "miles"
+    def __init__(self, dataset_id: str = "web", table_id: str = "miles"):
 
-    @property
+        os.environ["GOOGLE_SERVICE_CREDS"] = os.environ.get("GOOGLE_SERVICE_CREDS")
+
+        self.client = bigquery.Client()
+        self.dataset = dataset_id
+        self.table = table_id
+
     def credentials(self) -> dict:
-        """
-        Reads credentials from production environment
-        """
+        """Reads credentials from production environment"""
 
         raw = os.environ.get("GOOGLE_SERVICE_CREDS")
         scopes = ["https://www.googleapis.com/auth/cloud-platform"]
+        loaded = json.loads(raw)
 
-        with open(raw) as incoming:
-            loaded = json.load(incoming)
+        return ServiceAccountCredentials.from_json_keyfile_dict(loaded, scopes=scopes)
 
-        return ServiceAccountCredentials(loaded, scopes=scopes)
-
-    def get_all_miles(year: int) -> float:
+    def get_all_miles(self, year: int) -> float:
         """Queries all miles run for a given year"""
 
-        pass
+        base_query = f"""
+        with base_query as (
+            select 
+                created,
+                sent_to,
+                sent_from,
+                body
+            from `ian-is-online.web.miles`
+            where extract(year from created) = {year}
+            and sent_from = '+17038190646'
+            and safe_cast(body as float64) is not null
+            )
 
-    def push_to_db(
-        self,
-        body: str,
-        created_at: datetime,
-        from_: str = "+17038190646",
-        to: str = "+18043732715",
-    ):
+            select sum(safe_cast(body as float64)) from base_query
+        """
+
+        result = self.client.query(base_query)
+        result = [x[0] for x in result.result()]
+
+        return float(result[0])
+
+    def push_to_db(self, payload: list):
         """Writes a new row to BigQuery database"""
 
-        table = self.client
+        table = self.client.get_table(
+            self.client.dataset(self.dataset).table(self.table)
+        )
+
+        if type(payload) == dict:
+            payload = [payload]
+
+        errors = self.client.insert_rows(rows=payload, table=table)
+
+        if len(errors) == 0:
+            logging.info(f"Successfully logged {len(payload)} rows to warehouse")
+
+        else:
+            logging.error("FAILED TO UPLOAD")
+
+            for e in errors:
+                logging.error(e)
