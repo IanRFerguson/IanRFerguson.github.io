@@ -3,3 +3,6 @@
 .jekyll-cache/
 *Jekyll/*
 *DS_Store*
+hotspots.html
+.env
+*ipynb*
