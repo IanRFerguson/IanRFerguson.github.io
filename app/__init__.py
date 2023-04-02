@@ -1,10 +1,14 @@
 #!/bin/python3
 from flask import Flask
 import os
+import logging
+
+logging.basicConfig(level=logging.INFO)
 
 ##########
 
 here = os.path.abspath(os.path.dirname(__file__))
+logging.info(f"Path exists: {os.path.exists(os.path.join(here, '.env'))}")
 
 
 def create_app():
