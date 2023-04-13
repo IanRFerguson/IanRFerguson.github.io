@@ -72,6 +72,30 @@ class BQHelper:
 
         return float(result[0])
 
+    def get_miles_this_month(self) -> float:
+        """Queries all miles run in the current month"""
+
+        base_query = f"""
+        with base as (
+            select
+                extract(year from created) as year,
+                extract(month from created) as month, 
+                body
+            from `ian-is-online.web.miles`
+            where sent_from = '+17038190646'
+            and safe_cast(body as float64) is not null
+        )
+
+        select sum(safe_cast(body as float64)) from base
+        where year = extract(year from current_date())
+        and month = extract(month from current_date())
+        """
+
+        result = self.client.query(base_query)
+        result = [x[0] for x in result.result()]
+
+        return float(result[0])
+
     def push_to_db(self, payload: list):
         """Writes a new row to BigQuery database"""
 

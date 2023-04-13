@@ -46,6 +46,9 @@ def receive_request(**kwargs):
         if message_body == "miles":
             outgoing_wrapper(message_type="initial")
 
+        elif "month" in message_body.lower():
+            outgoing_wrapper(message_type="month")
+
         elif can_parse:
             # Numeric representation of text body
             numeric_value = float(message_body)
@@ -83,6 +86,11 @@ def outgoing_wrapper(message_type: str = None, all_miles: float = None):
         all_miles = round(all_miles, 2)
         message_body = f"You've run {all_miles} miles this year!\n\n{comment}"
 
+    elif message_type == "month":
+        bq = BQHelper()
+        this_month = round(bq.get_miles_this_month(), 2)
+        message_body = f"You've run {this_month} miles this month!\n\n{comment}"
+
     else:
         message_body = (
             "I don't have a good answer for that, but I hope you have a nice day!"
@@ -109,6 +117,11 @@ def generate_nice_comment() -> str:
         "Keep up the good work!",
         "I'm proud of you big dog!",
         "You're the fucking man!",
+        "I think you're amazing!",
+        "That's king shit tbh",
+        "You fucking rule",
+        "Bless TF up big man!",
+        "Wow, you are cool and good!",
     ]
 
     return random.choice(pool)
