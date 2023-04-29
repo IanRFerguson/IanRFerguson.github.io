@@ -118,10 +118,11 @@ def generate_nice_comment() -> str:
         "I'm proud of you big dog!",
         "You're the fucking man!",
         "I think you're amazing!",
-        "That's king shit tbh",
         "You fucking rule",
-        "Bless TF up big man!",
         "Wow, you are cool and good!",
+        "Fuck yes! Fuck! YES!",
+        "You rule!",
+        "Wow, look at you go!",
     ]
 
     return random.choice(pool)
