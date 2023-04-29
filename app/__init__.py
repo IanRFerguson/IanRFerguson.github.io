@@ -24,9 +24,4 @@ def create_app():
 
     app.register_blueprint(miles, url_prefix="/miles")
 
-    ### - New York WiFi
-    from app.new_york import bp as new_york
-
-    app.register_blueprint(new_york, url_prefix="/new_york")
-
     return app
