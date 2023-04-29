@@ -4,6 +4,7 @@ import json
 from dotenv import load_dotenv
 from google.cloud import bigquery
 from oauth2client.service_account import ServiceAccountCredentials
+from google.oauth2 import service_account
 from datetime import datetime
 import logging
 from time import sleep
@@ -23,19 +24,38 @@ class BQHelper:
 
     def __init__(self, dataset_id: str = "web", table_id: str = "miles"):
 
-        if not os.path.exists("/home/ianfergusonNYU/00_PACKETS/service.json"):
-            os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.environ.get(
-                "GOOGLE_APPLICATION_CREDENTIALS"
-            )
+        # Production routing
+        json_path_exists = os.path.exists(
+            "/home/ianfergusonNYU/00_PACKETS/service.json"
+        )
 
-        else:
-            os.environ[
-                "GOOGLE_APPLICATION_CREDENTIALS"
-            ] = "/home/ianfergusonNYU/00_PACKETS/service.json"
+        creds_in_env = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
 
         ###
 
-        self.client = bigquery.Client(project="ian-is-online")
+        if not json_path_exists and creds_in_env:
+            logging.info("Using environment variable for Google creds...")
+
+            # Read in JSON data stored in .env
+            self.__creds = service_account.Credentials.from_service_account_info(
+                json.loads(os.environ.get("GOOGLE_APPLICATION_CREDENTIALS"))
+            )
+
+        elif json_path_exists:
+            logging.info("Loading creds from PythonAnywhere...")
+
+            # Read in JSON data stored in local file
+            self.__creds = service_account.Credentials.from_service_account_info(
+                json.loads("/home/ianfergusonNYU/00_PACKETS/service.json")
+            )
+
+        self.__creds = self.__creds.with_scopes(
+            ["https://www.googleapis.com/auth/cloud-platform"]
+        )
+
+        ###
+
+        self.client = bigquery.Client(project="ian-is-online", credentials=self.__creds)
         self.dataset = dataset_id
         self.table = table_id
 
