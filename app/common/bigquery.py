@@ -5,9 +5,7 @@ from dotenv import load_dotenv
 from google.cloud import bigquery
 from oauth2client.service_account import ServiceAccountCredentials
 from google.oauth2 import service_account
-from datetime import datetime
 import logging
-from time import sleep
 
 from app import here
 
@@ -45,8 +43,8 @@ class BQHelper:
             logging.info("Loading creds from PythonAnywhere...")
 
             # Read in JSON data stored in local file
-            self.__creds = service_account.Credentials.from_service_account_info(
-                json.loads("/home/ianfergusonNYU/00_PACKETS/service.json")
+            self.__creds = service_account.Credentials.from_service_account_file(
+                "/home/ianfergusonNYU/00_PACKETS/service.json"
             )
 
         self.__creds = self.__creds.with_scopes(
