@@ -96,7 +96,7 @@ def get_all_diary_entries() -> list:
     select distinct
     (year || '-' || month || '-' || day) as date_stamp
     from base
-    order by (year || '-' || month || '-' || day) desc
+    order by 1 desc
     """
 
     bq = BQHelper(table_id="food")
