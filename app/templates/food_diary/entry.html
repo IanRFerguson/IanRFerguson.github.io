@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+<body>
+    {% block content %}
+    <div class="entry_box">
+        <h2>Food Log for {{ clean_day }}</h2>
+        <a href="{{ url_for('food.fd_landing') }}">
+            <h4>Back to All Entries</h4>
+        </a>
+    </div>
+    <div class="entry_box">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Food Item</th>
+                    <th>Daily Count</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for k, m in items %}
+                <tr>
+                    <td>{{ k }}</td>
+                    <td>{{ m }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% endblock %}
+</body>

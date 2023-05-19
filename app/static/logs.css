@@ -1,0 +1,15 @@
+.entry_box {
+    padding: 2%;
+}
+
+.entry_display {
+    font-size: 20;
+}
+
+td {
+    text-align: center;
+}
+
+table {
+    width: 50%;
+}

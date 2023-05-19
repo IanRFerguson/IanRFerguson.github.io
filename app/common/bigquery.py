@@ -21,7 +21,6 @@ class BQHelper:
     """
 
     def __init__(self, dataset_id: str = "web", table_id: str = "miles"):
-
         # Production routing
         json_path_exists = os.path.exists(
             "/home/ianfergusonNYU/00_PACKETS/service.json"
@@ -65,6 +64,21 @@ class BQHelper:
         loaded = json.loads(raw)
 
         return ServiceAccountCredentials.from_json_keyfile_dict(loaded, scopes=scopes)
+
+    def query(self, sql: str) -> None:
+        """
+        Wrapper for the bigquery.Client.query function
+
+        Args
+            sql: str
+            Valid SQL to execute on BigQuery
+        """
+
+        query_job = self.client.query(sql)
+        result = query_job.result()
+
+        if result:
+            return [x for x in result]
 
     def get_all_miles(self, year: int) -> float:
         """Queries all miles run for a given year"""

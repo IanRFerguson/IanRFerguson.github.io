@@ -10,6 +10,7 @@ from time import sleep
 
 from app import here
 from app.common.bigquery import BQHelper
+from app.food.helpers import process_food_items
 
 load_dotenv(os.path.join(here, ".env"))
 logging.basicConfig(level=logging.INFO)
@@ -33,7 +34,6 @@ def receive_request(**kwargs):
 
     # Only respond to messages from Ian
     if kwargs["from_"] == "+17038190646":
-
         message_body = kwargs["body"].strip().lower()
         logging.info(message_body)
 
@@ -48,6 +48,9 @@ def receive_request(**kwargs):
 
         elif "month" in message_body.lower():
             outgoing_wrapper(message_type="month")
+
+        elif "food" in message_body.lower():
+            process_food_items(message_body)
 
         elif can_parse:
             # Numeric representation of text body

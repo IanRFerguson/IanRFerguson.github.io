@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+<body>
+    {% block content %}
+    <h1>Ian's Food Diary</h1>
+    <h3>Taking care of your body is cool and good</h3>
+
+    {% for entry in entries %}
+    <a href="{{ url_for('food.log', date_stamp=entry) }}" class="entry_display">{{ entry }}</a>
+    {% endfor %}
+    {% endblock %}
+</body>
