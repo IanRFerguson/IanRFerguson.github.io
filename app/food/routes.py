@@ -14,7 +14,7 @@ def fd_landing():
 
 @bp.route("/log/<date_stamp>", methods=["GET"])
 def log(date_stamp: str):
-    items = read_manifest(date_string=date_stamp, log_sql=True)
+    items = read_manifest(date_string=date_stamp, log_sql=False)
     clean_day = datetime.strptime(date_stamp, "%Y-%m-%d").strftime("%A %B %d, %Y")
 
     food = items["food"]
