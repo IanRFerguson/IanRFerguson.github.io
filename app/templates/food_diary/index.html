@@ -8,13 +8,16 @@
     </div>
 
     <div class="entry_box">
-        {% for entry in entries %}
         <ul>
             <li>
-            <a href="{{ url_for('food.log', date_stamp=entry) }}" class="entry_display">{{ entry }}</a>
+                <a href="{{ url_for('food.log_all_days') }}" class="entry_display">View All Logs</a>
             </li>
+            {% for entry in entries %}
+            <li>
+                <a href="{{ url_for('food.log', date_stamp=entry) }}" class="entry_display">{{ entry }}</a>
+            </li>
+            {% endfor %}
         </ul>
-        {% endfor %}
     </div>
     {% endblock %}
 </body>
