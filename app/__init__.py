@@ -27,6 +27,6 @@ def create_app():
     ### - Food diary
     from app.food import bp as food
 
-    app.register_blueprint(food, url_prefix="/food_diary")
+    app.register_blueprint(food, url_prefix="/foodLog")
 
     return app

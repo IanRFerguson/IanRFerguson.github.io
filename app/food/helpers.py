@@ -38,7 +38,7 @@ def read_manifest(date_string=None, log_sql: bool = False) -> list:
     base = """
     with base as (
     select
-        food_item,
+        trim(upper(food_item)) as food_item,
         extract(year from created) as year,
         format("%02d", extract(month from created)) as month,
         format("%02d", extract(day from created)) as day
@@ -46,8 +46,7 @@ def read_manifest(date_string=None, log_sql: bool = False) -> list:
     )
 
     select
-    (year || '-' || month || '-' || day) as date_stamp,
-    upper(food_item) as food_item,
+    food_item,
     count(*) as count
     from base
     """
@@ -55,7 +54,7 @@ def read_manifest(date_string=None, log_sql: bool = False) -> list:
     if date_string:
         base += f" where (year || '-' || month || '-' || day) = '{date_string}'"
 
-    base += " group by 1,2 order by 3 desc"
+    base += " group by 1 order by 2 desc"
 
     if log_sql:
         logging.info("SQL call to BigQuery...")
@@ -66,10 +65,9 @@ def read_manifest(date_string=None, log_sql: bool = False) -> list:
     bq = BQHelper(table_id="food")
     response = bq.query(sql=base)
 
-    container = {"day": [], "food": [], "count": []}
+    container = {"food": [], "count": []}
 
     for r in response:
-        container["day"].append(r["date_stamp"])
         container["food"].append(r["food_item"])
         container["count"].append(r["count"])
 
