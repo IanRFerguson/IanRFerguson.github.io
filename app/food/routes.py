@@ -34,7 +34,7 @@ def log_all_days():
     About
     """
 
-    items = read_manifest(log_sql=True)
+    items = read_manifest(log_sql=False)
     clean_day = "every damn day"
     food = items["food"]
     counts = items["count"]

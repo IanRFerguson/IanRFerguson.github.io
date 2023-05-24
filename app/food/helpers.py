@@ -39,9 +39,7 @@ def read_manifest(date_string=None, log_sql: bool = False) -> list:
     with base as (
     select
         trim(upper(food_item)) as food_item,
-        extract(year from created) as year,
-        format("%02d", extract(month from created)) as month,
-        format("%02d", extract(day from created)) as day
+        date(created, 'America/New_York') AS date_est
     from web.food
     )
 
@@ -52,7 +50,7 @@ def read_manifest(date_string=None, log_sql: bool = False) -> list:
     """
 
     if date_string:
-        base += f" where (year || '-' || month || '-' || day) = '{date_string}'"
+        base += f" where date_est = '{date_string}'"
 
     base += " group by 1 order by 2 desc"
 
