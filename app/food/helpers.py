@@ -79,19 +79,9 @@ def get_all_diary_entries() -> list:
     """
 
     base = """
-    with base as (
-        select
-            food_item,
-            extract(year from created) as year,
-            format("%02d", extract(month from created)) as month,
-            format("%02d", extract(day from created)) as day
-        from web.food
-        order by created desc
-    )
-
     select distinct
-    (year || '-' || month || '-' || day) as date_stamp
-    from base
+        date(created, 'America/New_York') as date_stamp
+    from web.food
     order by 1 desc
     """
 
