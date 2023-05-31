@@ -30,7 +30,7 @@ def sms():
     sent_to = request.form["To"]
     sent_from = request.form["From"]
     sent_body = request.form["Body"]
-    current_time = datetime.now().strftime("%Y-%m-%d")
+    current_time = datetime.now()
 
     try:
         receive_request(to=sent_to, from_=sent_from, body=sent_body, time=current_time)
@@ -39,3 +39,13 @@ def sms():
     except Exception as e:
         logging.error(e)
         return "Failure"
+
+
+@bp.route("/rebuild_twilio", methods=["GET", "POST"])
+def rebuild_twilio():
+    from app.dev.twilio_rebuild import main as rebuild
+
+    # Trigger sync from Twilio to BigQuery
+    rebuild()
+
+    return "Success"

@@ -20,7 +20,7 @@ def build_response_dict() -> dict:
     for response in client.messages.list():
         container.append(
             {
-                "created": response.day_created,
+                "created": response.date_created,
                 "sent_to": response.to,
                 "sent_from": response.from_,
                 "body": response.body,
