@@ -1,0 +1,155 @@
+{
+    "1994": {
+        "age": "0",
+        "location": "Bethlehem, PA",
+        "address": "901 High Street, Bethlehem, PA 18018",
+        "lat": "40.626350",
+        "lon": "-75.373350",
+        "employer": "",
+        "occupation": ""
+    },
+    "1996": {
+        "age": "2",
+        "location": "Charlotte, NC",
+        "address": "6800 Fishers Farm Lane, Charlotte, NC 28277",
+        "lat": "35.083070",
+        "lon": "-80.831890",
+        "employer": "",
+        "occupation": ""
+    },
+    "1997": {
+        "age": "3",
+        "location": "Sterling, VA",
+        "address": "20525 Brandy Station Court, Sterling, VA 20165",
+        "lat": "39.047060",
+        "lon": "-77.351330",
+        "employer": "",
+        "occupation": ""
+    },
+    "2005": {
+        "age": "11",
+        "location": "Leesburg, VA",
+        "address": "18775 Thomas Lee Way, Leesburg, VA 20176",
+        "lat": "39.096260",
+        "lon": "-77.487790",
+        "employer": "",
+        "occupation": ""
+    },
+    "2012": {
+        "age": "18",
+        "location": "Richmond, VA",
+        "address": "710 W Franklin Street, Richmond, VA 23220",
+        "lat": "37.548210",
+        "lon": "-77.450100",
+        "employer": "Virginia Commonwealth University",
+        "occupation": "Student"
+    },
+    "2013": {
+        "age": "19",
+        "location": "Richmond, VA",
+        "address": "12 S Harrison Street, Richmond, VA 23220",
+        "lat": "37.545100",
+        "lon": "-77.455840",
+        "employer": "Virginia Commonwealth University",
+        "occupation": "Student"
+    },
+    "2014": {
+        "age": "20",
+        "location": "Richmond, VA",
+        "address": "117 S Pine Street, Richmond, VA 23220",
+        "lat": "37.543390",
+        "lon": "-77.450150",
+        "employer": "Whole Foods Market",
+        "occupation": "Cashier"
+    },
+    "2015": {
+        "age": "21",
+        "location": "Richmond, VA",
+        "address": "117 S Pine Street, Richmond, VA 23220",
+        "lat": "37.543390",
+        "lon": "-77.450150",
+        "employer": "Whole Foods Market",
+        "occupation": "Cashier"
+    },
+    "2016": {
+        "age": "22",
+        "location": "Richmond, VA",
+        "address": "4712 Grove Avenue, Richmond, VA 23226",
+        "lat": "37.567920",
+        "lon": "-77.504010",
+        "employer": "Whole Foods Market",
+        "occupation": "Cashier"
+    },
+    "2017": {
+        "age": "23",
+        "location": "Richmond, VA",
+        "address": "1920 Boardman Lane, Richmond, VA 23238",
+        "lat": "37.620230",
+        "lon": "-77.584070",
+        "employer": "Whole Foods Market",
+        "occupation": "Store Systems Integrator"
+    },
+    "2018": {
+        "age": "24",
+        "location": "Queens, NY",
+        "address": "803 Wyckoff Ave, Ridgewood, NY",
+        "lat": "40.698270",
+        "lon": "-73.908480",
+        "employer": "New York University",
+        "occupation": "Student"
+    },
+    "2019": {
+        "age": "25",
+        "location": "Queens, NY",
+        "address": "803 Wyckoff Ave, Ridgewood, NY",
+        "lat": "40.698270",
+        "lon": "-73.908480",
+        "employer": "New York University",
+        "occupation": "Student"
+    },
+    "2020": {
+        "age": "26",
+        "location": "San Francisco, CA",
+        "address": "3914 24th Street, San Francisco, CA 94114",
+        "lat": "37.751780",
+        "lon": "-122.430130",
+        "employer": "Stanford University",
+        "occupation": "Lab Manager"
+    },
+    "2021": {
+        "age": "27",
+        "location": "San Francisco, CA",
+        "address": "2844 21st Street, San Francisco, CA 94110",
+        "lat": "37.757720",
+        "lon": "-122.411270",
+        "employer": "Stanford University",
+        "occupation": "Lab Manager"
+    },
+    "2022": {
+        "age": "28",
+        "location": "San Francisco, CA",
+        "address": "2844 21st Street, San Francisco, CA 94110",
+        "lat": "37.757720",
+        "lon": "-122.411270",
+        "employer": "Movement Labs",
+        "occupation": "Software Engineer"
+    },
+    "2023a": {
+        "age": "29",
+        "location": "Brooklyn, NY",
+        "address": "2251 Church Avenue, Brooklyn, NY 11226",
+        "lat": "40.650740",
+        "lon": "-73.957090",
+        "employer": "The Movement Cooperative",
+        "occupation": "Data Engineer"
+    },
+    "2023b": {
+        "age": "29",
+        "location": "Brooklyn, NY",
+        "address": "689 Park Avenue, Brooklyn, NY 11206",
+        "lat": "40.698020",
+        "lon": "-73.948080",
+        "employer": "The Movement Cooperative",
+        "occupation": "Data Engineer"
+    }
+}
