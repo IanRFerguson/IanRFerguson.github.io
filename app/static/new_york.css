@@ -39,3 +39,11 @@ body {
 .view_box {
     padding: 3% 0;
 }
+
+/* Small Screens */
+@media (max-width: 959px) {
+    .hotspot_map iframe {
+        width: 100%;
+        height: 50%;
+    }
+}

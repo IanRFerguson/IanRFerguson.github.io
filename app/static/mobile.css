@@ -14,7 +14,7 @@
     }
 
     .contact_me_content {
-        padding-bottom: 5%;
+        padding: 5%;
         display: inline-block;
     }
 
@@ -64,8 +64,12 @@
         margin-left: auto;
     }
 
+    .about_me_content {
+        padding: 1%;
+    }
+
     .contact_me_content {
-        padding-bottom: 5%;
+        padding: 1%;
         display: inline-block;
     }
 
