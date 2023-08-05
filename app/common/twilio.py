@@ -100,11 +100,13 @@ def outgoing_wrapper(message_type: str = None, all_miles: float = None):
         )
 
     try:
-        message = client.messages.create(
-            body=message_body,
-            from_=my_number,
-            to="+17038190646",
-        )
+        # NOTE - Twilio campaign under review
+        # Turning off response texts until that gets cleared up
+        # message = client.messages.create(
+        #     body=message_body,
+        #     from_=my_number,
+        #     to="+17038190646",
+        # )
 
         return 0
 
