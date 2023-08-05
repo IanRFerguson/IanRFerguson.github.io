@@ -108,6 +108,12 @@ def outgoing_wrapper(message_type: str = None, all_miles: float = None):
         #     to="+17038190646",
         # )
 
+        logging.info(
+            "BE ADVISED - SMS not distributed. This is intentional while Twilio reviews a campaign application"
+        )
+
+        logging.info(f"Message={message_body}")
+
         return 0
 
     except Exception as e:
