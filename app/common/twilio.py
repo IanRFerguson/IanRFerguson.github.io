@@ -102,11 +102,11 @@ def outgoing_wrapper(message_type: str = None, all_miles: float = None):
     try:
         # NOTE - Twilio campaign under review
         # Turning off response texts until that gets cleared up
-        message = client.messages.create(
-            body=message_body,
-            from_=my_number,
-            to="+17038190646",
-        )
+        # message = client.messages.create(
+        #     body=message_body,
+        #     from_=my_number,
+        #     to="+17038190646",
+        # )
 
         logging.info(f"Message={message_body}")
 
