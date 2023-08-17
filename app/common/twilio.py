@@ -102,14 +102,10 @@ def outgoing_wrapper(message_type: str = None, all_miles: float = None):
     try:
         # NOTE - Twilio campaign under review
         # Turning off response texts until that gets cleared up
-        # message = client.messages.create(
-        #     body=message_body,
-        #     from_=my_number,
-        #     to="+17038190646",
-        # )
-
-        logging.info(
-            "BE ADVISED - SMS not distributed. This is intentional while Twilio reviews a campaign application"
+        message = client.messages.create(
+            body=message_body,
+            from_=my_number,
+            to="+17038190646",
         )
 
         logging.info(f"Message={message_body}")
